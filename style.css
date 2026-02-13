@@ -1,13 +1,105 @@
-body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; }
-header { background: #0B3D2E; color: #fff; padding: 2em 1em; text-align:center; }
-header img { width:120px; height:120px; border-radius:50%; display:block; margin:0 auto 0.5em; }
-header h1 { margin:0.2em 0; font-size:1.8em; }
-header p { margin:0.2em 0 1em; }
-header a { color:#fff; text-decoration:none; }
-.btn { display:inline-block; padding:0.7em 1.5em; background:#fff; color:#0B3D2E; text-decoration:none; border-radius:5px; font-weight:bold; margin-top:0.5em; margin-bottom: 20px; }
-section { padding:2em 1em; text-align:center; }
-section h2 { margin-bottom:1em; color:#0B3D2E; }
-ul { list-style:none; padding:0; }
-li { margin:0.5em 0; }
-footer { background:#eee; padding:1.5em 1em; text-align:center; font-size:0.9em; }
-@media(max-width:600px){ header h1 { font-size:1.5em; } }
+/* RESET E BASE */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: #0B3D2E;
+  color: #fff;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+/* LOGO REDONDA E MAIOR */
+header img {
+  width: 220px;       /* tamanho maior */
+  height: 220px;
+  border-radius: 50%; /* deixa redonda */
+  display: block;
+  margin: 0 auto 0.5em;
+  object-fit: cover;  /* evita distorção */
+  border: 4px solid #fff; /* opcional: borda elegante */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* sombra leve */
+}
+
+/* TITULO PRINCIPAL */
+header h1 {
+  margin: 0.2em 0;
+  font-size: 1.8em;
+}
+
+/* PARAGRAFOS DO HEADER */
+header p {
+  margin: 0.2em 0 1em;
+}
+
+/* BOTÃO WHATSAPP */
+header .btn {
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  background: #fff;
+  color: #0B3D2E;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 30px; /* aumenta espaço entre botão e idiomas */
+}
+
+/* PARÁGRAFO DE IDIOMAS */
+header p.lang {
+  margin-top: 0;
+}
+
+/* LINKS NO HEADER */
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* SEÇÕES */
+section {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 1em;
+  color: #0B3D2E;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+/* FOOTER */
+footer {
+  background: #eee;
+  padding: 1.5em 1em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* RESPONSIVO */
+@media(max-width:600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+  header img {
+    width: 150px;
+    height: 150px;
+  }
+  header .btn {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+}
