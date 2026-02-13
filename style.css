@@ -4,7 +4,7 @@ header img { width:120px; height:120px; border-radius:50%; display:block; margin
 header h1 { margin:0.2em 0; font-size:1.8em; }
 header p { margin:0.2em 0 1em; }
 header a { color:#fff; text-decoration:none; }
-.btn { display:inline-block; padding:0.7em 1.5em; background:#fff; color:#0B3D2E; text-decoration:none; border-radius:5px; font-weight:bold; margin-top:0.5em; }
+.btn { display:inline-block; padding:0.7em 1.5em; background:#fff; color:#0B3D2E; text-decoration:none; border-radius:5px; font-weight:bold; margin-top:0.5em; margin-bottom: 20px; }
 section { padding:2em 1em; text-align:center; }
 section h2 { margin-bottom:1em; color:#0B3D2E; }
 ul { list-style:none; padding:0; }
