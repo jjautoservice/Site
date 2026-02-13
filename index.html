@@ -38,7 +38,24 @@
     <li>Service-Reset (Öl / AdBlue / Inspektion) - 25€</li>
   </ul>
 </section>
+<section id="contact-form">
+  <h2>Kontaktformular</h2>
 
+  <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
+    <!-- Redirecionamento após envio -->
+    <input type="hidden" name="_next" value="https://jj-autoservice.de/thankyou.html">
+    <input type="hidden" name="_subject" value="Neue Anfrage über Website">
+    <input type="hidden" name="_replyto" value="info@jj-autoservice.de">
+
+    <input type="text" name="name" placeholder="Ihr Name" required>
+    <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+    <input type="tel" name="phone" placeholder="Telefonnummer (optional)">
+    <input type="text" name="vehicle" placeholder="Fahrzeug (Marke / Modell / Baujahr)" required>
+    <textarea name="message" rows="5" placeholder="Welcher Service wird benötigt?" required></textarea>
+
+    <button type="submit">Nachricht senden</button>
+  </form>
+</section>
 <section id="contact">
   <h2>Kontakt</h2>
   <p>Email: <a href="mailto:info@jj-autoservice.de">info@jj-autoservice.de</a></p>
