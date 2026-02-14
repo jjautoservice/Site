@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JJ Autoservice Cartão de Visita</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .card {
+    width: 850px;
+    height: 450px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+  }
+  .logo {
+    flex: 1;
+  }
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    color: #0B3D2E;
+    font-family: Arial, sans-serif;
+  }
+  .content h2 {
+    margin: 0;
+    font-size: 26px;
+  }
+  .content .slogan {
+    margin: 8px 0;
+    font-size: 18px;
+  }
+  .content .services p {
+    margin: 4px 0;
+    font-size: 16px;
+  }
+  .qr {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .qr img {
+    width: 150px;
+    height: 150px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <img src="/mnt/data/file_00000000ae287246846769526903f0de" alt="JJ AutoService Logo">
+    </div>
+    <div class="content">
+      <h2>JJ Autoservice</h2>
+      <p class="slogan">Serviço móvel de carros no Kiez – rápido, honesto, sem complicações</p>
+      <div class="services">
+        <p>Troca de óleo PKW – 150€</p>
+        <p>Leitura de códigos – 40€</p>
+        <p>Consultoria compra de carro usado – 150€</p>
+        <p>Contato: WhatsApp: +49 163 978 2039</p>
+      </div>
+    </div>
+    <div class="qr">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://jj-autoservice.de/index-pt.html" alt="QR Code">
+    </div>
+  </div>
+</body>
+</html>
