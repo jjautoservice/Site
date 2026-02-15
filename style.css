@@ -287,30 +287,43 @@ details[open] {
 
 .about-container {
   display: flex;
-  flex-direction: column; /* texto sempre abaixo */
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
   max-width: 900px;
   margin: 0 auto;
-  gap: 1.5em;
+  gap: 2em;
 }
 
 .about-images {
   display: flex;
-  flex-direction: row; /* fotos lado a lado */
+  flex-direction: column;
   gap: 1em;
-  justify-content: center;
+  flex: 1 1 250px; /* mantém proporção */
+  align-items: center;
 }
 
 .about-images img {
   width: 220px;
   height: 220px;
-  border-radius: 10px; /* bordas arredondadas */
+  border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .about-text {
-  text-align: center; /* texto abaixo das fotos */
+  flex: 2 1 400px;
+  text-align: left;
   line-height: 1.7;
   font-size: 1.05em;
+}
+
+@media(max-width:800px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-text {
+    text-align: center;
+  }
 }
