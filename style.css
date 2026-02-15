@@ -1,92 +1,293 @@
-/* ============================= */
-/* ROOT VARIABLES */
-/* ============================= */
-
-:root {
-  --primary: #0B3D2E;
-  --primary-dark: #092f23;
-  --light-bg: #f4f4f4;
-  --text-dark: #333;
-  --white: #ffffff;
-}
-
-/* ============================= */
-/* RESET & BASE */
-/* ============================= */
-
+/* RESET E BASE */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  color: var(--text-dark);
 }
 
-section {
-  padding: 2em 1em;
-}
-
-section h2 {
-  text-align: center;
-  margin-bottom: 1em;
-  color: var(--primary);
-}
-
-/* ============================= */
 /* HEADER */
-/* ============================= */
-
 header {
-  background: var(--primary);
-  color: var(--white);
+  background: #0B3D2E;
+  color: #fff;
   padding: 2em 1em;
   text-align: center;
 }
 
+/* LOGO REDONDA E MAIOR */
 header img {
-  width: 220px;
+  width: 220px;       /* tamanho maior */
   height: 220px;
-  border-radius: 50%;
+  border-radius: 50%; /* deixa redonda */
   display: block;
   margin: 0 auto 0.5em;
-  object-fit: cover;
-  border: 4px solid var(--white);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  object-fit: cover;  /* evita distorção */
+  border: 4px solid #fff; /* opcional: borda elegante */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* sombra leve */
 }
 
+/* TITULO PRINCIPAL */
 header h1 {
   margin: 0.2em 0;
   font-size: 1.8em;
 }
 
+/* PARAGRAFOS DO HEADER */
 header p {
   margin: 0.2em 0 1em;
 }
 
+/* BOTÃO WHATSAPP */
 header .btn {
   display: inline-block;
   padding: 0.7em 1.5em;
-  background: var(--white);
-  color: var(--primary);
+  background: #fff;
+  color: #0B3D2E;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
   margin-top: 0.5em;
-  margin-bottom: 30px;
+  margin-bottom: 30px; /* aumenta espaço entre botão e idiomas */
 }
 
+/* PARÁGRAFO DE IDIOMAS */
+header p.lang {
+  margin-top: 0;
+}
+
+/* LINKS NO HEADER */
 header a {
-  color: var(--white);
+  color: #fff;
   text-decoration: none;
 }
 
+/* SEÇÕES */
+section {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 1em;
+  color: #0B3D2E;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+/* FOOTER */
+footer {
+  background: #eee;
+  padding: 1.5em 1em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* RESPONSIVO */
+@media(max-width:600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+  header img {
+    width: 150px;
+    height: 150px;
+  }
+  header .btn {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+}
+
+/* ===== CONTACT FORM ===== */
+
+#contact-form {
+  padding: 3em 1em;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+#contact-form h2 {
+  color: #0B3D2E;
+  margin-bottom: 1.5em;
+  font-size: 1.8em;
+}
+
+/* FORM CONTAINER */
+#contact-form form {
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* INPUTS & TEXTAREA */
+#contact-form input,
+#contact-form textarea {
+  padding: 0.9em 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* FOCUS EFFECT (profissional e discreto) */
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #0B3D2E;
+  box-shadow: 0 0 0 2px rgba(11, 61, 46, 0.1);
+}
+
+/* TEXTAREA FIX */
+#contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* BUTTON */
+#contact-form button {
+  padding: 1em;
+  background: #0B3D2E;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+/* HOVER */
+#contact-form button:hover {
+  background: #092f23;
+}
+
+/* CLICK EFFECT */
+#contact-form button:active {
+  transform: scale(0.98);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  #contact-form {
+    padding: 2em 1em;
+  }
+
+  #contact-form h2 {
+    font-size: 1.5em;
+  }
+}
+
 /* ============================= */
-/* ABOUT SECTION */
+/* SEÇÃO OFERTAS */
 /* ============================= */
+
+#offers {
+  padding: 3em 1em;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+#offers h2 {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  color: #0B3D2E;
+}
+
+/* Container de cada oferta */
+.offer {
+  max-width: 700px;
+  margin: 0 auto 1.2em auto;
+  text-align: left;
+}
+
+/* Caixa expansível */
+details {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.2em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all 0.2s ease;
+}
+
+/* Linha principal clicável */
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+  font-size: 1.1em;
+}
+
+/* Remove marcador padrão */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Símbolo + */
+summary::after {
+  content: "+";
+  font-size: 1.6em;
+  margin-left: 12px;
+  transition: transform 0.2s ease;
+}
+
+/* Quando aberto vira – */
+details[open] summary::after {
+  content: "−";
+}
+
+/* Título */
+.offer-title {
+  flex: 1;
+}
+
+/* Preço */
+.offer-price {
+  margin-left: 1em;
+  color: #0B3D2E;
+  font-weight: bold;
+}
+
+/* Texto interno */
+details p {
+  margin-top: 1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Efeito quando aberto */
+details[open] {
+  border-left: 4px solid #0B3D2E;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .offer-price {
+    margin-left: 0;
+    margin-top: 0.3em;
+  }
+}
 
 .about-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* texto sempre abaixo */
   align-items: center;
   max-width: 900px;
   margin: 0 auto;
@@ -95,6 +296,7 @@ header a {
 
 .about-images {
   display: flex;
+  flex-direction: row; /* fotos lado a lado */
   gap: 1em;
   justify-content: center;
 }
@@ -102,16 +304,13 @@ header a {
 .about-images img {
   width: 220px;
   height: 220px;
-  border-radius: 10px;
+  border-radius: 10px; /* bordas arredondadas */
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .about-text {
-  text-align: left;
+  text-align: center; /* texto abaixo das fotos */
   line-height: 1.7;
   font-size: 1.05em;
 }
-
-/* ============================= */
-/* OFFERS SECTION
