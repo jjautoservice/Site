@@ -10,28 +10,28 @@ xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <priority>1.0</priority>
 
     <xhtml:link rel="alternate" hreflang="de" href="https://jj-autoservice.de/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://jj-autoservice.de/html-en.html" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://jj-autoservice.de/html-pt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jj-autoservice.de/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jj-autoservice.de/index-pt.html" />
   </url>
 
   <url>
-    <loc>https://jj-autoservice.de/html-en.html</loc>
+    <loc>https://jj-autoservice.de/index-en.html</loc>
     <lastmod>2026-02-15</lastmod>
     <priority>0.8</priority>
 
     <xhtml:link rel="alternate" hreflang="de" href="https://jj-autoservice.de/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://jj-autoservice.de/html-en.html" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://jj-autoservice.de/html-pt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jj-autoservice.de/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jj-autoservice.de/index-pt.html" />
   </url>
 
   <url>
-    <loc>https://jj-autoservice.de/html-pt.html</loc>
+    <loc>https://jj-autoservice.de/index-pt.html</loc>
     <lastmod>2026-02-15</lastmod>
     <priority>0.8</priority>
 
     <xhtml:link rel="alternate" hreflang="de" href="https://jj-autoservice.de/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://jj-autoservice.de/html-en.html" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://jj-autoservice.de/html-pt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jj-autoservice.de/index-en.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jj-autoservice.de/index-pt.html" />
   </url>
 
 </urlset>
